@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="border border-black border-1 w-50 p-3 position-absolute top-50 start-50 translate-middle">
+        
+        <form action="" id="contactForm" onsubmit="returnvadidate()">
+            <h3 class="text-start">Contact Us</h3>
+
+        <label for="name" class="form-label">Name :</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Your Name"/>
+        <span class="text-danger" id="nameError"></span>
+        <br/>
+
+        <label for="email" class="form-label">Email </label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Your Email"/>
+        <span class="text-danger" id="emailError"></span><br/>
+
+        <label for="mobile" class="form-label">Mobile Number </label>
+        <input type="number" class="form-control" id="mobile" placeholder="Enter Mobile Number"/>
+        <span class="text-danger" id="mobilenumError"></span><br />
+
+        <label for="messageError" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="textarea" rows="3" placeholder="Enter Your Message"></textarea>
+        <span class="text-danger" id="messageError"></span><br>
+
+        <div class = "text-center">
+            <button class="btn btn-primary w-100" type="submit">Submit</button> 
+        </div>
+        </form>
+        
+
+    </div>
+    
+    <script>
+        function validate()
+        {
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const mobile = document.getElementById("mobile").value.trim();
+            const message = document.getElementById("messageError").value.trim();
+
+            //Error spans
+            const nameError = document.getElementById("nameError");
+            const emailError = document.getElementById("emailError");
+            const mobilenumError = document.getElementById("mobilenumError");
+            const messageError = document.getElementById("messageError");
+
+            //clear previous error message
+            nameError.textContent = "";
+            emailError.textContent = "";
+            mobilenumError.textContent = "";
+            messageError.textContent = "";
+
+            let isValid = true;
+
+            //  Validate fields
+            if(name ===""){
+                nameError.textContent = "Please Enter your name";
+                isValid = false;
+            }else if(name.lenght<=3){
+                nameError.textContent = "Name must be at least 3 char";
+                isValid = false;
+            }
+
+            if(email===""){
+                emailError.textContent = "please enter your email.";
+                isValid = false;
+            }else if(/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+                emailError.textContent = "Please enter a valid email address.";
+                isValid = false;
+            }
+
+            if(mobile===""){
+                mobilenumError.textContent = "Please enter your mobile number";
+                isValid = false;
+            }
+            else if(!/^\d{10}$/.test(mobile)){
+                mobilenumError.textContent = "Please enter a valid 10 digit mobile number.";
+                isValid = false;
+            }
+
+            if(message ===""){
+                messageError.textContent = "Please enter your message.";
+                isValid = false;
+            }
+
+            if(isValid){
+                alert("Form submitted successfully!");
+            }
+            
+            return isValid;
+
+        }
+    </script>
+</body>
+</html>
+
+
+<!-- code pen
+client log scrolling codepen 
+-->

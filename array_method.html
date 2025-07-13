@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Of Method</title>
+</head>
+<body>
+    <script>
+        var a = ["Dipak", 22, "Male", "Software Enignner"];
+        document.write(a + "<br>");
+
+        a[1] = 24;
+        document.write(a + "<br>");
+    </script>
+<hr>
+    <!-- sorting and reverse  -->
+     <script>
+        var b = ["Dipak", "Anna", "Jayant", "Pandurang"];
+        document.write(b + "<br>");
+        b.sort();
+        document.write(b + "<br>");
+        b.reverse();
+        document.write(b + "<br>");
+
+     </script>
+<hr>
+     <!-- pop and push -->
+      <script>
+       var c = ["Dipak", "Anna", "Jayant", "Pandurang", "Anmol"];
+        document.write(c + "<br>"); 
+        c.pop();
+        c.pop();
+        document.write(c + "<br>"); 
+        c.push("Rohit");
+        c.push("Yogesh");
+
+        document.write(c + "<br>"); 
+
+
+      </script>
+      <hr>
+      <!-- shift unshift 
+       same as work push pop but differnce is only shift/ unshift staring  point use and pop/push is work as end point-->
+       <script>
+        var d = ["Dipak", "Anna", "Jayant", "Pandurang", "Anmol"];
+        document.write(d + "<br>"); 
+        d.shift();
+        d.shift();
+        document.write(d + "<br>"); 
+        d.unshift("Rohit");
+        d.unshift("Yogesh");
+
+        document.write(d + "<br>"); 
+       </script>
+<hr>
+       <!-- concat and join -->
+        <script>
+            var e = ["Dipak", "Anna", "Jayant", "Pandurang", "Anmol"];
+            var f = ["Om", "Sarthk", "Mahesh ", "Tushar ", "Rushi"];
+            var h = ["Baban", "Pritm"];
+            var g = e.concat(f,h);
+            document.write(g + "<br>");
+        </script>
+</body>
+</html>

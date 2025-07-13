@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arthmatic Oparation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="border border-black border-3 w-25 p-3 position-absolute top-50 start-50 translate-middle">
+      <h4 class="text-start">Arithmetic Operation Using Function</h4>
+      <form action="" name="myform">
+
+      <label for="n1" class="form-label">Number 1:</label>
+      <input type="number" class="form-control" name="n1" id="n1"/><br />
+
+      <label for="n2" class="form-label">Number 2:</label>
+      <input type="number" class="form-control" name="n2" id="n2" /><br/>
+      
+      <label for="res" class="form-label">Result:</label>
+      <input type="number"class="form-control" name="res" id="res" disabled/><br />
+
+      <div class="position-relative mb-2">
+        <div class="position-absolute top-50 start-50 translate-middle">
+          <button type="button" class="btn btn-danger" onclick="add('+')">+</button>
+          <button type="button" class="btn btn-danger" onclick="sub()">-</button>
+          <button type="button" class="btn btn-danger" onclick="multi()">*</button>
+          <button type="button" class="btn btn-danger" onclick="div()">/</button>
+        </div>
+      </div>
+
+      </form>
+      
+    </div>
+    <script>
+      var a,b,result;
+      function add()
+      {
+        a= Number(document.myform.n1.value);
+        b= Number(document.myform.n2.value);
+        result=a+b;
+        document.myform.res.value=result.toFixed(4); 
+      }
+
+      var a,b,result;
+      function sub()
+      {
+        a= Number(document.myform.n1.value);
+        b= Number(document.myform.n2.value);
+        result=a-b;
+        document.myform.res.value=result.toFixed(4); 
+      }
+
+      var a,b,result;
+      function multi()
+      {
+        a= Number(document.myform.n1.value);
+        b= Number(document.myform.n2.value);
+        result=a*b;
+        document.myform.res.value=result.toFixed(4); 
+      }
+      var a,b,result;
+      function div()
+      {
+        a= Number(document.myform.n1.value);
+        b= Number(document.myform.n2.value);
+        result=a/b;
+        document.myform.res.value=result.toFixed(4); 
+      }
+    </script>
+  </body>
+</html>
