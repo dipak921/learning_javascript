@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator in javascript</title>
+
+</head>
+<body>
+    <h2>Operator in JavaScript</h2>
+
+    <script>
+        // Arithmetic Operators
+        var a = 100;
+        var b = 10;
+        var c = a+b;  //110
+        document.write(c);
+        var d = a-b;  //90
+        document.write(d);
+        var e = a*b;  //1000
+        document.write(e);
+        var f = a/b;  //10
+        document.write(f);
+        var g = a%b;  //0
+        document.write(g);
+
+        var abcdefg = 100;
+        document.write(abcdefg);
+        document.write("<br>");
+        var ab = 10*10+(100/10)-100/2; //priority
+        document.write(ab);
+
+        //assignmetn operator
+        // left += right
+        //left = varible
+        //right = variable +value
+        //left= left+right          
+        document.write("<h2>Assignmetn Operator </h2>");
+        var a = 100;
+        a +=10;
+        a+=a;
+        a+=a;
+        a+=a+a;
+        a-=100;
+        a*=1;
+        //a*=0; 
+        a/=10;
+        a%=2; // remainder printi
+        document.write(a);
+
+        // inc or dec operator
+
+        document.write("<h2>Incrametnt or decrimetn  Operator </h2>");
+        // i++; ++ for increament 
+        // i--; -- for decreament
+        var a = 100;
+        a++;
+        a++;
+        ++a;
+        ++a;
+        document.write(a++);
+        document.write(++a);
+        document.write("<BR>");
+        var b = 50;
+        b--;
+        b--;
+        --b;
+        --b;
+        document.write(--b); // frist minus then print
+        document.write(b--); // frist print then value minus
+        document.write(b--);//44
+        
+        document.write("<h2>condition </h2>");
+        document.write("<h2>comparison operator </h2>");
+        // comparison op
+        // == === < > <= >= !=
+        // alert(10==10); //true
+        // alert(10=="10"); //true
+        // alert("a2z" == "A2Z"); // FALSE
+
+        // alert(10===10);// data (type)===data (type)  threple equal to both with data types or double equal to only value check.
+        // alert(10==="10");// 10 (num)===10 (str)
+
+        // alert(17<20); //true
+        // alert(20<10); //false
+            //alert(10!=10)//false
+            //alert(10!=11); //true
+
+        
+        // logical op
+        document.write("<h2>logical operator </h2>");
+        // && || !
+        //alert(10==10 && 12==12); 
+        // && 
+        //  T T = T
+        //  F T = F
+        //  F F = F
+        //  T F = F
+
+        // var sub1 = 36;
+        // var sub2 = 36;
+        // var sub3 = 66;
+        // alert(sub1>=35 && sub2>=35 && sub3>=35);
+
+         //   ||
+        //   T T = T
+        //   F T = T
+        //   T F = T
+        //   F F = F
+        var sub1 = 36;
+        var sub2 = 36;
+        var sub3 = 6;
+        //alert(sub1>=35 || sub2>=35 || sub3>=35); 
+
+        // !
+        !(10==10) // nahi he
+
+        // ternary op
+        document.write("ternary operator");
+        document.write("<br>");
+        var a = (10==10)?"correct ":"wrong";
+        document.write(a);
+        //concatination op
+        document.write("concatination operator");
+        document.write("<br>");
+        var fname = "Dipak";
+        var lname = "Chande";
+
+        document.write(fname +"   "+ lname);
+        document.write("<br>");
+        document.write("Welcome  " +fname)
+
+    </script>
+</body>
+</html>
