@@ -45,16 +45,52 @@
                 var tot= shop-discal;
                 document.write("amot = "+ tot);
             
-            document.write("<br><h2>if else part start");
+            document.write("<br><h2>if else part start </h2>");
             
 
 
             //if() else -> two part executeif 
+                // if(cond){
+                //     true
+                // }else{
+                //     false
+                // }
+                var a = 300;
+                var b = 200;
+                if(a>b){
+                    document.write("A is big");
+                }else{
+                    document.write("<br>B is big");
+
+                }
+                var a = 501;
+                if(a%2==0){
+                    document.write("<br> Numberr is even");
+                }else{
+                    document.write("<br> Number is odd");
+                }
+                
             //if() else if() else if() else -> multiple part execute
+            var mark = 8;    
+            if(mark >=35){
+                    document.write("<br> Pass with C Grade");
+                }else if (mark>=50 && mark<=60) {
+                    document.write("<br> Pass with B Grade");
+                }else if (mark>=61 && mark<=70) {
+                    document.write("<br> Pass with A Grade");
+                }else if (mark>=71 && mark<=100) {
+                    document.write("<br> Pass with A+ Grade");
+                }   
+                else {
+                    document.write("<br>fail");
+                }
+
             //switch() -> multiple part execute 
-
-
+                document.write("<h2>S wicth</h2>");
+                //syantax
+                
     </script>
     
+    <!-- Write a program that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15. -->
 </body>
 </html>
