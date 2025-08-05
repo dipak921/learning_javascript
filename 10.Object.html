@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object In Java Script</title>
+
+</head>
+<body>
+    <h2>Object in java script</h2>
+    <script>
+        //new Object() 
+        //{}
+        // key: value
+        //{key:value,key:value,.................key:value}
+        var a = {'name':"dipak",'email':'dipakchande921@gmail.com','mobile':9373570576};
+        //all
+        document.write(a);
+        //console.log(a);
+        document.write("<br>"+a.name);
+        document.write("<br>"+a.email);
+        document.write("<br>"+a.mobile);
+        var a = {'name':"dipak",'email':'dipakchande921@gmail.com','mobile':9373570576};
+        document.write("<table border = '1' width = 100%>")
+        document.write("<tr>");
+        document.write("<td>"+a.name+"<td>");
+        document.write("<td>"+a.email+"<td>");
+        document.write("<td>"+a.mobile+"<td>");
+        document.write("</tr>");
+        document.write("</table>");
+        document.write("<br>");
+
+
+
+        //object in function
+        var obj={
+            "fname":"Dipak",
+            "lname":"Chande",
+            "fullname": function(){
+                return this.lname +" "+this.fname
+            }
+        }
+         document.write(obj.fullname());
+        // second type to print a value
+        // console.log(obj.fullname());
+
+
+        var ob=new Object();
+        ob.book="math";
+        ob.marks="80";
+        ob.marks="50";
+
+        console.log(ob); 
+        
+        
+        //loop in object
+        document.write("<br><h2>loop in object</h2>");
+        var data = {
+            "name":"Dipak",
+            "email":"dipakchande921@gamil.com",
+            "phone":9373570576,
+            "address":"sonai",
+            "spaliazation":"IT",
+            
+        }
+        console.log(data);
+        for(key in data){
+            //document.write("<br>"+key);
+            //alert(key);
+            document.write("<br>" + key + ":" + data[key]);
+        }
+
+        //nested object
+        var a = {
+            "aa":{"a":"a","b":"b"},
+            "bb":"bb",
+            "cc":{"a":1,"b":2,"c":3},
+        }
+        document.write(a.cc.c);
+        document.write(a.bb);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
