@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function in array</title>
+
+</head>
+<body>
+    <h2>Function in Array</h2>
+    <script>   
+        var arr = [10,20,30,40,50,60,70,80,90,100];
+        document.write(arr);
+        arr.pop();
+        arr.pop(); // this function is use for delete last value
+        document.write("<br>"+arr);
+
+        arr.push(100,200,300);// this function is use for add value in last index
+        document.write("<br>"+arr);
+
+        arr.shift();
+        arr.shift(); //this function is use for delete a first value 
+        document.write("<br>"+arr);
+
+        arr.unshift(200,300);
+        arr.unshift(250,350);//this function is used for add a value in frist index
+        document.write("<br>"+arr);
+
+        var a= arr.indexOf(30,0);//find a index number of paritcular number.
+        document.write("<br>"+a);
+         
+        //It combines all elements of the arr array into a single string separated by slashes (/) and displays it on the webpage with a line break.
+
+        var va = arr.join("/");
+        document.write("<br>"+va);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

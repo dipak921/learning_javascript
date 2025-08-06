@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in Java Script</title>
+
+</head>
+<body>
+    <h2>Array</h2>
+    <script>
+        //new Array();
+        //[]
+        //val,val,val,
+        //index no
+        //[10,20,30,40,50,60,70,80,90,100];
+
+        var arr = [10,20,30,40,50,60,70,80,90,100];
+        // all record
+        document.write(arr);
+        console.log(arr);
+
+        // Single record
+        document.write("<br>"+ arr[4]);
+
+        var ar = new Array();
+        ar[0] = 110;
+        ar[1] = 100;
+        ar[2] = 100;
+        ar[3] = 100;
+
+        document.write("<br>"+ar[0])
+        console.log(ar);
+
+        document.write("<br><h3>Array in loop</h3>");
+        var arr = [10,20,30,40,50,60,70,80,90,100];
+        document.write(arr.length);
+        for(var i=0; i<arr.length; i++){ // loop is run on array lenght
+            document.write("<br>" + arr[i]);
+        }
+        document.write("<br><h3>print and store in arr number from array</h3>");
+        var ar=new Array();
+        //1-10
+        for(var i = 0; i<10; i++){
+            ar[i]= i+1;
+        }
+        document.write(ar);
+
+        document.write("<br><h3>print and store in even number</h3>");
+        var arra=new Array();
+        for(var i = 0;i<10; i++){
+            arra[i] = i % 2==0;
+            arra.push(i);//store the even number directly
+            document.write("<br>"+ i);
+        }
+
+        
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
