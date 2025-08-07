@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body>
+    <h1>DOM in Java script</h1>
+    <!--document object Models
+    this topic in direct contact in html -->
+
+    <!--  dom type  -->
+    <!-- * by id -->
+    <h1 id="dal1">Welcome Js</h1>
+    <h1 id="dal2"></h1>
+    <script>
+      //get
+      //data send
+      var a = document.getElementById("dal1").innerHTML;
+      console.log(a);
+      //set
+      //data revice
+      document.getElementById("dal2").innerHTML = a;
+    </script>
+
+    <!-- * by class -->
+    <p class="demo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
+      nobis.1
+    </p>
+    <p class="demo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
+      nobis.2
+    </p>
+    <p class="demo">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus,
+      nobis.3
+    </p>
+
+    <script>
+      //get
+      var a = document.getElementsByClassName("demo")[0].innerHTML;
+      console.log(a);
+      //set
+      document.getElementsByClassName("demo")[1].innerHTML = "wellcome js";
+    </script>
+
+    <!-- * by tag -->
+    <h2>Welcome ram</h2>
+    <h2>Welcome dipak</h2>
+    <h2>Welcome jay</h2>
+    <h2>Welcome krish</h2>
+    <script>
+      document.getElementsByTagName("h2").innerHTML;
+      //get
+      var a = document.getElementsByTagName("h2")[0].innerHTML;
+      console.log(a);
+      //set
+      document.getElementsByTagName("h2")[2].innerHTML = "Hi Jayant";
+    </script>
+
+    <!-- * by name -->
+    <!-- by name is also use in input type -->
+    <input type="text" name="name" id="" value="Dipak Chande" />
+    <input type="email" name="email" id="" value="" />
+    <script>
+      //get
+      var a = document.getElementsByName("name")[0].value;
+      console.log(a);
+      //set
+      document.getElementsByName("email")[0].value = "dipakchande921@gmail.com";
+    </script>
+
+    <!-- * qurey selector -->
+    <!-- document.  uerySelector('#id') -->
+    <h2 id="grating">Welcome ram</h2>
+    <h2 id="name">Welcome dipak</h2>
+    <script>
+      //get
+      var a = document.querySelector("#grating").innerHTML;
+      console.log(a);
+      //set
+      document.querySelector("#name").innerHTML = "Hi Jayant";
+    </script>
+    <hr />
+    <!-- documetn.querySelector(''.class') -->
+    <h2 class="grating">Welcome ram</h2>
+    <h2 class="raj">Welcome dipak</h2>
+    <script>
+      //get
+      var a = document.querySelectorAll(".grating").innerHTML;
+      console.log(a);
+      //set
+      document.querySelectorAll(".raj")[0].innerHTML = "Hi Raj";
+    </script>
+    <hr />
+    <!-- document.querySelector('tag name')  -->
+     <h6>Welcome lakshamn</h6>
+    <h6>Welcome rajasaheb</h6>
+    <script>
+      //get
+      var a = document.querySelectorAll("h6")[0].innerHTML;
+      console.log(a);
+      //set
+      document.querySelectorAll("h6")[1].innerHTML = "Hi Raj";
+    </script>
+
+    <hr>
+    <script>
+      // var a = document;
+      // console.log(a);
+    </script>
+  </body>
+</html>
