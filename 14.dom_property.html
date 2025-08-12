@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Proprty In JavaScript</title>
+
+</head>
+<body>
+    <h1 id="data"><mark>Dom Proprty In JavaScript</mark></h1>
+    <h1 id="data1"></h1>
+    <script>
+        //get ghene
+        var a = document.getElementById('data').innerHTML;
+        console.log(a);
+        //set dene
+        document.getElementById('data1').innerHTML = "<mark>Welcome</mark>";
+    </script>
+    <hr>
+    <div class="box">
+
+    </div>
+    <script>
+        // write in single or separeted
+        document.getElementsByClassName('box')[0].style.height="200px";
+        document.getElementsByClassName('box')[0].style.width="200px";
+        document.getElementsByClassName('box')[0].style.background="red";
+        //Multi
+        document.getElementsByClassName('box')[0].style = "height:300px; width:300px; background-color:blue;";
+    </script>
+    <hr>
+    <img src="" height="150px" width="150px" title="Nature Image" style="border: 2px solid brown;" id="img" alt="">
+    <script>
+        //get 
+        var a = document.getElementById('img').getAttribute('style');
+        var a = document.getElementById('img').getAttribute('title');
+        console.log(a);
+        //set 
+        document.getElementById('img').setAttribute('style','border:5px solid blue');
+    </script>
+    <hr>
+    <style>
+        .box3{
+            height: 300px;
+            width: 200px;
+            background-color: orange;
+        }
+        .box4{
+            height: 300px;
+            width: 200px;
+            background-color: green;
+        }
+    </style>
+     <div class="box3" id="divbox"></div><br>
+     <button onclick="fun1()">>Add</button>
+     <button onclick="fun2()">>Remove</button>
+     <script>
+        function fun1(){
+        document.getElementById('divbox').classList.add('box4');        }
+        function fun2(){
+            document.getElementById('divbox').classList.remove('box4');
+        }
+     </script>
+     <hr>
+     
+</body>
+</html>

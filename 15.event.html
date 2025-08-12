@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in JavaScript</title>
+     <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+     </style>
+</head>
+<body id="body" onkeypress="fun21" onkeydown="fun22()" onkeyup="fun23()">
+    <h1>Event in JavaScript</h1>
+     <!--mounse event =  onclick ondblclick oncoutextmenu onmouseover onmouseout -->
+    <div class="box" id="box" onclick="fun11()" ondblclick="fun12()" oncontextmenu="fun13()" onmouseover="fun14()" onmouseout="fun15()" > </div>
+    <script>
+        function fun11(){
+            document.getElementById('box').style ="background:brown";
+        }
+        function fun12(){
+            document.getElementById('box').style ="background:black";
+        }
+        function fun13(){
+            document.getElementById('box').style ="background:yellow";
+        }
+        function fun14(){
+            document.getElementById('box').style ="background:blue";
+        }
+        function fun15(){
+            document.getElementById('box').style ="background:green";
+        }
+    </script>
+    <hr>
+      <!-- keyboard event = onkeypress(space button), onkeydown(contro button), onkeyup -->
+       <script>
+        function fun21(){
+            document.getElementById('body').style= "background:blueviolet";
+        }
+        function fun22(){
+            document.getElementById('body').style= "background:aqua";
+        }
+        function fun23(){
+            document.getElementById('body').style= "background:yellowgreen";
+        }
+       </script>
+
+     <!-- form event =onfocus, onblur, onselect(copy), onchange, onsubmit, -->
+    
+
+    <!-- window event = onresize,onscroll -->
+       <textarea name="" id="data" onkeyup="fun50()" >
+       </textarea>
+       <h1 id="data4"></h1>
+       <script>
+        function fun50(){
+            var a = document.getElementById('data').value;
+            document.getElementById('data4').innerText=a;
+        }
+        
+
+       </script>
+
+
+
+</body>
+</html>
