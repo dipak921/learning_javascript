@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+</head>
+<body>
+    <input type="text" id="inp1" placeholder ="val1" onkeyup="tot()"><br><br>
+    <input type="text" id="inp2" placeholder ="val2" onkeyup="tot()"><br><br>
+    <input type="text" id="tot"  placeholder ="val3" onkeyup="tot()"><br><br>
+    <script type="text/javascript">
+        function tot(){
+            var a = document.getElementById('inp1').value;
+            var b = document.getElementById('inp2').value;
+            var c = Number(a)*Number(b);
+            document.getElementById('tot').value = c;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+  </head>
+  <body onresize="" onscroll="">
+    <form action="save.html" onsubmit="return confirm('Are you Sure...');">
+      <label for="">Name :-</label>
+      <input
+        type="text"
+        id="name"
+        onfocus="onfocus1('name')"
+        onblur="blur1('name')"
+      /><br /><br />
+      <label for="">Email :-</label>
+      <input
+        type="text"
+        id="email"
+        onfocus="onfocus1('email')"
+        onblur="blur1('email')"
+      /><br /><br />
+      <label for="">Mobile :-</label>
+      <input
+        type="text"
+        id="mobile"
+        onfocus="onfocus1('mobile')"
+        onblur="blur1('mobile')"
+      /><br /><br />
+      <label for="">Tech :-</label>
+      <select name="" id="change" onchange="chan()">
+        <option value="">Choose</option>
+        <option value="">HTML</option>
+        <option value="">CSS</option>
+        <option value="">JvavScript</option></select
+      ><br /><br />
+      <button>submit</button>
+    </form>
+    <script type="text/javascript">
+      function onfocus1(da) {
+        document.getElementById(da).style = "background:red";
+      }
+      function blur1(da) {
+        document.getElementById(da).style = "background:green";
+      }
+      function chan() {
+        document.getElementById("change").style = "background:pink";
+      }
+    </script>
+  </body>
+</html>

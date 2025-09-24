@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Three</title>
+</head>
+<body>
+    <button onclick="inc()">+</button>
+    <input type="text" id="inp">
+    <button onclick="dec()">-</button>
+    <script type="text/javascript">
+        function inc(){
+            var a= Number(document.getElementById('inp').value);
+            a++;
+            document.getElementById('inp').value=a;
+        }
+        function dec(){
+            var a= Number(document.getElementById('inp').value);
+            if(a>0){
+                a--;
+                document.getElementById('inp').value=a;
+            }
+        }
+
+    </script>
+</body>
+</html>
