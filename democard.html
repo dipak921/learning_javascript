@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo Card</title>
+  </head>
+  <body>
+    <h1 style="text-align: center; margin-top: 50px">Card Demo</h1>
+    <table
+      border="1"
+      width="100%"
+      style="border-collapse: collapse"
+      cellpadding="10px;"
+    >
+      <tr>
+        <th>Status</th>
+        <th>Product Name</th>
+        <th>Product Rate</th>
+        <th>Product Qut</th>
+        <th>Product Total</th>
+      </tr>
+      <tr>
+        <td>
+          <button>B</button>
+        </td>
+        <td>
+          <input type="text" name="" id="" />
+        </td>
+        <td>
+          <input type="text" name="" id="rate1" onkeyup="cal1()" />
+        </td>
+        <td>
+          <button onclick="dec1()">-</button>
+          <input type="text" value="1" id="qnt1" />
+          <button onclick="incr1()">+</button>
+        </td>
+        <td>
+          <input type="text" id="ptotal1" readonly class ="pptot"/>
+        </td>
+      </tr>
+      <!-- second method start to learn javascript -->
+
+      <tr>
+        <td>
+          <button>C</button>
+        </td>
+        <td>
+          <input type="text" name="" id="" />
+        </td>
+        <td>
+          <input
+            type="text"
+            name=""
+            id="rate2"
+            onkeyup="cal('rate2','qnt2','ptotal2')"
+          />
+        </td>
+        <td>
+          <button onclick="dec('rate2','qnt2','ptotal2')">-</button>
+          <input type="text" value="1" id="qnt2" />
+          <button onclick="incr('rate2','qnt2','ptotal2')">+</button>
+        </td>
+        <td>
+          <input type="text" id="ptotal2" readonly class ="pptot"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button>D</button>
+        </td>
+        <td>
+          <input type="text" name="" id="" />
+        </td>
+        <td>
+          <input
+            type="text"
+            name=""
+            id="rate3"
+            onkeyup="cal('rate3','qnt3','ptotal3')"
+          />
+        </td>
+        <td>
+          <button onclick="dec('rate3','qnt3','ptotal3')">-</button>
+          <input type="text" value="1" id="qnt3" />
+          <button onclick="incr('rate3','qnt3','ptotal3')">+</button>
+        </td>
+        <td>
+          <input type="text" id="ptotal3" readonly class ="pptot"/>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4">
+            <h1 style="text-align: right;">Total</h1>
+        </td>
+        <td>
+            <input type="text" name=""  id="total">
+        </td>
+      </tr>
+
+    </table>
+
+    <script type="text/javascript">
+      // second row misson
+      function dec1() {
+        var qnt = Number(document.getElementById("qnt1").value);
+        if (qnt > 0) {
+          qnt--;
+          document.getElementById("qnt1").value = qnt;
+        }
+        cal1();
+      }
+      function incr1() {
+        var qnt = Number(document.getElementById("qnt1").value);
+        qnt++;
+        document.getElementById("qnt1").value = qnt;
+        cal1();
+      }
+      function cal1() {
+        var rate = document.getElementById("rate1").value;
+        var qnt = document.getElementById("qnt1").value;
+        var tot = Number(rate) * Number(qnt);
+        document.getElementById("ptotal1").value = tot;
+      }
+      // learn one method use in one fucntion in javascipt start to c product
+      function dec(r, q, t) {
+        var qnt = Number(document.getElementById(q).value);
+        if (qnt > 0) {
+          qnt--;
+          document.getElementById(q).value = qnt;
+        }
+        cal(r, q, t);
+      }
+      function incr(r, q, t) {
+        var qnt = Number(document.getElementById(q).value);
+        qnt++;
+        document.getElementById(q).value = qnt;
+        cal(r, q, t);
+      }
+      function cal(r, q, t) {
+        var rate = document.getElementById(r).value;
+        var qnt = document.getElementById(q).value;
+        var tot = Number(rate) * Number(qnt);
+        document.getElementById(t).value = tot;
+        total();
+      }
+
+
+
+      // how to total 
+    function total(){
+        var a=document.getElementsByClassName('pptot');
+        var sum = 0;
+        for(var i=0;i<a.length; i++){
+            sum = sum + Number(a[i].value);
+        }
+        document.getElementById('total').value=sum;
+    }
+    </script>
+  </body>
+</html>
