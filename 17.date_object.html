@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object </title>
+</head>
+<body>
+
+    <script>
+        var a =new Date();
+        document.write(a);
+        // get ghene
+        document.write("<br>"+a.getDay());
+        //date
+        document.write("<br>"+a.getDate());
+        document.write(":"+Number(a.getMonth()+1));
+        document.write(":"+a.getFullYear());
+        // time
+        document.write("<br>");
+        document.write(""+a.getHours());
+        document.write(":"+a.getMinutes());
+        document.write(":"+a.getSeconds());
+        document.write(":"+a.getMilliseconds());
+
+document.write("<br><hr>");
+        // set dene
+        var da=new Date();
+        document.write(da);
+
+        da.setDate(15)
+        da.setMonth(10)
+        da.setFullYear(2030)
+        da.setHours(3)
+        da.setSeconds(45)
+        da.setMilliseconds(200)
+
+        document.write("<br>"+da);
+
+    </script>
+</body>
+</html>
