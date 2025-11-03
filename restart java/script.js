@@ -100,7 +100,7 @@
 // let res = str1.concat(str); // res = "My name is the :-" str + str1;
 // console.log(res);
 
-console.log("12/10/2025");
+// console.log("12/10/2025");
 // let heroes = ["dipak", "annasaheb", "rohit", "yogesh"];
 
 // let marks = [45, 65, 89, 78, 54];
@@ -131,9 +131,9 @@ console.log("12/10/2025");
 //     console.log(hero);
 // }
 
-let marks = [85, 97, 44, 37, 76, 60];
-let avg;
-let total = 0;
+// let marks = [85, 97, 44, 37, 76, 60];
+// let avg;
+// let total = 0;
 // for(let i = 0; i<marks.length; i++)
 // {
 //     total +=marks[i];
@@ -175,7 +175,7 @@ let total = 0;
 
 // Array in javascript
 
-let foodItems = ["apple", "litchi", "tomato", "potato"];
+// let foodItems = ["apple", "litchi", "tomato", "potato"];
 
 // foodItems.push("chips","burger");
 
@@ -183,5 +183,90 @@ let foodItems = ["apple", "litchi", "tomato", "potato"];
 
 // console.log(foodItems);
 
-console.log(foodItems);
-console.log(foodItems.toString()); // create a new array orginal array as it
+// console.log(foodItems);
+// console.log(foodItems.toString()); // create a new array orginal array as it
+
+console.log("13/10/2025");
+
+// function myFunction(){
+//     console.log("Welocome to my Home");
+//     console.log("we are learning js");
+// }
+
+// myFunction();
+
+// function sum(x,y){
+//     s = x + y;
+//     return s;
+// }
+
+// let val = sum(3,4);
+// console.log(val);
+
+// function sum(a,b){
+//     return a + b;
+// }
+
+// //Moder js
+// const arrowSum = (a,b) =>{
+//     console.log(a + b);
+// };
+
+// function mul(a, b){
+//     return a* b;
+// }
+
+// const arrowMulti = (a,b) =>{
+//     console.log(a * b);
+// }
+
+// let multi = mul(4,2);
+
+// console.log("Multipliction is the :", multi);
+
+// Create a function using the function keyword that takes a string as an argument and returns the number of vowels in the string.
+
+// function countVowels(str) {
+//   let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+// creat an arrow function to perform the sam task.
+
+// const countVow =   (str) => {
+//     let count = 0;
+//   for (const char of str) {
+//     if (
+//       char === "a" ||
+//       char === "e" ||
+//       char === "i" ||
+//       char === "o" ||
+//       char === "u"
+//     ) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+
+
+// For a given array of numbers print the square of each value using the forEach Loop
+
+// let nums = [2,3,4,5,6];
+
+// nums.forEach((num) =>{
+//     console.log(num * num);
+// });
+
+console.log("14/10/2025");
