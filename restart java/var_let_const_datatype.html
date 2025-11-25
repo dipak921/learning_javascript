@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New variable</title>
+  </head>
+  <body>
+    <script>
+      // Gobal Scope
+      var fname = "Dipak";
+      var fname = "Adity"; //reassing is possiable
+      fname = "Shurti"; // re-declare is not possiable
+      document.write(fname);
+      document.write("<br>");
+
+      // var is Functional Scope
+      let lname = "Chande";
+      // let lname = "Chande"; // reassing is not possiable
+      lname = "Patil"; // re-declare is possiable
+      document.write(lname);
+      document.write("<br>");
+
+      // const is Functional and block Scope
+      const cname = "TCS";
+      //const cname = "Congnizant"; // reassing is not possiable
+      cname = "Infobean"; // re-declare is not possiable
+      document.write(cname);
+      document.write("<br>");
+    </script>
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <script>
+      function example() {
+        var x = 1;
+        let y = 2;
+        const z = 3;
+        if (true) {
+          var x = 10;
+          let y = 20;
+          const z = 30;
+          document.write("x :" + x + "<br>");
+          document.write("y :" + y + "<br>");
+          document.write("z :" + z + "<br>");
+        }
+        document.write("x :" + x + "<br>");
+        document.write("y :" + y + "<br>");
+        document.write("z :" + z + "<br>");
+      }
+      example();
+    </script>
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  </body>
+</html>
